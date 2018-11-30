@@ -1,5 +1,5 @@
 # killmybrowser
-A collection of code that maybe kills your browser or at least the tab.
+A collection of code that maybe kills your browser or at least the tab. Pull requests welcome.
 
 [killmybrowser.com](https://killmybrowser.com)
 
